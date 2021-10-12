@@ -50,7 +50,7 @@
 							</p>
 						</header>
 						<p>
-						  Patent, market, and scale more quickly, cheaply, and surely with consulting and custom solutions based on our new design-build-test loop.  With expertise in laboratory operations, machine learning, and bioinformatics, we combine high-throughput experiments, automatic cloud data storage, and breakthrough small-data machine learning to help your research and development project spiral toward discovery!
+						        Our science-and-software consulting framework accelerates your research to let you patent, market, and scale sooner. We apply our scientific expertise and machine learning software to automatically fit your model to your data and optimize it for your goal, so your scientists can hypothesize better and experiment sooner. After they update their model accordingly, we fit and optimize it again, and so on toward discovery!
 						</p>
 						<footer>
 							<a href="consulting" class="button">Continue Reading</a>
@@ -71,28 +71,28 @@
 						        <article class="col-4 col-12-mobile special">
 								<a class="image featured"><img src="images/evolve.jpg" alt="" /></a>
 								<header>
-								        <h3>Hypothesize</h3>
+								        <h3>Fit</h3>
 								</header>
 								<p>
-									Breakthrough small-data machine learning software develops the likeliest potenial models of the system you are studying and optimizes their inputs for the outputs you want.
+									Automated machine learning evolves your model to fit your data.
 								</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
 								<a class="image featured"><img src="images/optimize.jpg" alt="" /></a>
 								<header>
-									<h3>Experiment</h3>
+									<h3>Tune</h3>
 								</header>
 								<p>
-									 State-of-the-art high-throughput experiment machines repeatedly and reliably test the recommendations of the optimized model.
+									 Parallel runs optimize your model inputs for the outputs you want.
 								</p>
 							</article>
 							<article class="col-4 col-12-mobile special">
 								<a class="image featured"><img src="images/experiment.jpg" alt="" /></a>
 								<header>
-									<h3>Upload</h3>
+									<h3>Test</h3>
 								</header>
 								<p>
-									 Newly commercially available automatic cloud data management services take the data from the high-throughput machines and return them to the machine learning software to improve its model and optimizations.
+									Try our model and inputs in the lab and return your results for another round.
 								</p>
 							</article>
 						</div>
