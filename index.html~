@@ -83,7 +83,7 @@
                     </li>
                     <!-- Call to Action -->
                     <li class="nav-item">
-                        <a class="btn btn-outline-primary me-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact</a>
+                        <a class="btn btn-outline-primary me-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Connect With Us</a>
                     </li>
                 </ul>
             </div>
@@ -96,9 +96,9 @@
                 <div class="container-lg py-5">
                     <div class="row py-5">
                         <div class="col-10">
-                            <h1>Un-Bottleneck R&D</h1>
-                            <p>Meet your budget, deadline, and risk tolerance by reducing the time, cost, and risk of R&D: we work with you to identify your R&D bottlenecks, procure convergent off-the-shelf technologies to expand them, and integrate them into a new workflow with training and tech support.</p>
-                            <a href="#" class="btn btn-outline-primary me-1"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact</a>
+                            <h1> R&D</h1>
+                            <p>FrankenTech combines expertise in machine learning, bioinformatics and high-throughput experimentation to help our clients automate their biotech R&D workflow. We work with clients to reduce the cost, time, and risk associated with more traditional R&D processes and provide them with integrated technology, training and support.</p>
+                            <a href="#" class="btn btn-outline-primary me-1"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Connect With Us</a>
                         </div>
                     </div>
                 </div>
