@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap');
+
+
+:root {
+  --line-bg: #171718;
+  --line-height: 10px;
+  --light-width: 50%;
+  --light-cell-number: 8;
+  --light-cell-width: calc(var(--line-height) * 3);
+  --light-cell-separator-width: calc(var(--line-height) * 0.1);
+  /* red light #ff000 */
+  --light-color-on: #B7ED87;
+  --light-color-off: #556E3F51;
+  --bs-primary: #7ba05b;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  font-family: 'Roboto Slab', serif !important;
+  color: #ffffff!important;;
+  background-color: #171718!important;;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600 !important;
+  text-transform: uppercase;
+  color:#B7ED87;
+}
+
+h1 {font-size: 3.052rem!important;}
+  
+h2 {font-size: 2.441rem!important;}
+  
+h3 {font-size: 1.953rem!important;}
+  
+h4 {font-size: 1.563rem!important; color:#DDEDCE!important;}
+  
+h5 {font-size: 1.25rem!important; color: #7ba05b!important;}
+
+.navbar-brand {
+  font-family: 'Rajdhani', sans-serif;
+  font-weight: 600!important;
+  font-size: 1.953rem!important;
+  text-transform: uppercase;
+  color:#B7ED87!important;
+}
+
+.navbar-collapse {
+  justify-content: flex-end!important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+  color:#fff!important;
+}
+
+.navbar-dark .navbar-brand {
+  color:#B7ED87!important;
+}
+
+.card{
+  backdrop-filter: blur(6x) saturate(200%)!important;
+  -webkit-backdrop-filter: blur(6px) saturate(200%)!important;
+  background-color: rgba(23, 23, 24, 0.5)!important;
+  border: 1px solid rgba(255, 255, 255, 0.125)!important;
+}
+
+.card:hover{
+  cursor: move;
+}
+
+.offcanvas{
+  backdrop-filter: blur(6x) saturate(200%)!important;;
+  -webkit-backdrop-filter: blur(6px) saturate(200%)!important;;
+  background-color: rgba(23, 23, 24, 0.99)!important;;
+  border: 1px solid rgba(255, 255, 255, 0.125)!important;;
+}
+
+.offcanvas-end {
+  width: 50%!important;;
+  max-width:1000px!important;;
+  border-left: 1px solid #A4B099!important;;
+}
+
+.card-img, .card-img-top {
+  object-fit: cover!important;
+  aspect-ratio: 4/3!important;
+}
+
+.btn {
+  border-radius: 2rem!important;
+  padding: .357rem 1.5rem!important;
+  font-family: 'Roboto', sans-serif!important;
+}
+
+.btn-outline-primary {
+  color: #7ba05b!important;
+  border-color: #B7ED87!important;
+}
+
+.btn-outline-primary:hover {
+  color: #000!important;
+  background-color: #B7ED87!important;
+  border-color: #7ba05b!important;
+}
+
+.btn-outline-primary:focus {
+  box-shadow: 0 0 0 0.25rem #7ba05b7b!important;
+}
+
+::selection {
+  color:#171718;
+  background: #7ba05b; /* WebKit/Blink Browsers */
+}
+  ::-moz-selection {
+  color:#171718;
+  background: #7ba05b; /* Gecko Browsers */
+}
+
+.modal-header{
+    background-color: #171718!important;
+    background-color: #7ba05b!important;
+}
+
+.modal-content {
+    background-color: #171718!important;
+}
+
+
+.line {
+  position: relative;
+  width: calc(((var(--light-cell-width) + var(--light-cell-separator-width)) * var(--light-cell-number)) - var(--light-cell-separator-width));
+  height: var(--line-height);
+  overflow: hidden;
+  background: var(--line-bg);
+  /* center */
+  /* top: 50vh;
+  left: 50vw;
+  transform: translateX(-50%) translateY(-50%); */
+}
+  
+.line:after {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-image: repeating-linear-gradient(
+    90deg,
+    var(--light-color-off),
+    var(--light-color-off) var(--light-cell-width),
+    var(--line-bg) var(--light-cell-width),
+    var(--line-bg) calc(var(--light-cell-width) + var(--light-cell-separator-width))
+  );
+  background-size: 200% 200%;
+}
+  
+.light {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  left: calc(var(--light-width) / 2 * -1); /* hidden start */
+  width: var(--light-width);
+  background: linear-gradient(90deg, transparent 0%, var(--light-color-on) 45%, var(--light-color-on) 55%, transparent 100%);
+  animation: KITT 4s infinite ease-in-out alternate;
+}
+  
+@keyframes KITT {
+  0%, 100% {
+    left: calc(var(--light-width) / 2 * -1);
+  }
+  50% {
+    left: calc(100% - var(--light-width) / 2);
+  }
+}
+
+.cinema{
+  aspect-ratio: 16/9;
+  position: relative;
+}
+
+iframe {
+  position: absolute;
+}

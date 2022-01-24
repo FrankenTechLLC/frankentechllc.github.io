@@ -1,249 +1,325 @@
-<!DOCTYPE HTML>
-<!--
-	Helios by HTML5 UP
-	html5up.net | @ajlkn
-	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
--->
-<html>
-	<head>
-		<title>Home</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
-	<body class="homepage is-preload">
-		<div id="page-wrapper">
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="FrankenTech Consulting">
+    <meta property="og:title" content="FrankenTech" />
+	<meta property="og:type" content="website" />
+	<meta property="og:description" content="Machine Learning Meets BioInformatics" />
+	<meta property="og:image" content="https://www.frankentech.net/img/ftoimg.png" />
+	<meta property="og:url" content="https://www.frankentech.net/" />
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600&family=Roboto+Slab&family=Roboto:ital,wght@0,300;0,400;0,900;1,300;1,400;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@0.5.21/dist/vanta.cells.min.js"></script>
 
-			<!-- Header -->
-				<div id="header">
+    <title>FrankenTech</title>
+  </head>
+  <body>
 
-					<!-- Inner -->
-						<div class="inner">
-							<header>
-								<h1>FrankenTech</h1>
-								<hr />
-								<p>Automating bioinformatics</p>
-							</header>
-						</div>
+    <!-- Fluid Container -->
+    <div id="cells" class="container-fluid p-0" >
 
-					<!-- Nav -->
-						<nav id="nav">
-							<ul>
-							        <li><a href="consulting">Consulting</a></li>
-								<li><a href="publications">Publications</a></li>
-							</ul>
-						</nav>
+        <!-- Offcanvas -->
+        <div class="offcanvas offcanvas-end w-40" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+            <div class="offcanvas-header">
+              <h2 id="offcanvasRightLabel" class="mt-3">Contact</h2>
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body w-60">
+              <div class="row">
+                <div class="col-12 pb-4">
+                    <img src="./img/adam.jpeg" class="img-fluid w-100" alt="Finkle">
+                    <h3 class="mt-3">Adam</h3>
+                    <h4>Co-Founder, Chief Executive and Technical Officer</h4>
+                    <h5>UMass Boston Physics</h5>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button class="btn btn-outline-primary" type=link><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></button>
+                        <button class="btn btn-outline-primary" type="link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-plus-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+                          </svg></button>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <img src="./img/grace.jpeg" class="img-fluid w-100" alt="Fink">
+                    <h3 class="mt-3">Grace</h3>
+                    <h4>Co-Founder, Chief Science and Operations Officer</h4>
+                    <h5>Northeastern University Bioinformatics</h5>
+                    <div class="d-grid gap-2 col-12 mx-auto">
+                        <button class="btn btn-outline-primary" type=link><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854V1.146zm4.943 12.248V6.169H2.542v7.225h2.401zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248-.822 0-1.359.54-1.359 1.248 0 .694.521 1.248 1.327 1.248h.016zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016a5.54 5.54 0 0 1 .016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225h2.4z"/>
+                          </svg></button>
+                        <button class="btn btn-outline-primary" type="link"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-envelope-plus-fill" viewBox="0 0 16 16">
+                            <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414.05 3.555ZM0 4.697v7.104l5.803-3.558L0 4.697ZM6.761 8.83l-6.57 4.026A2 2 0 0 0 2 14h6.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.606-3.446l-.367-.225L8 9.586l-1.239-.757ZM16 4.697v4.974A4.491 4.491 0 0 0 12.5 8a4.49 4.49 0 0 0-1.965.45l-.338-.207L16 4.697Z"/>
+                            <path d="M16 12.5a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Zm-3.5-2a.5.5 0 0 0-.5.5v1h-1a.5.5 0 0 0 0 1h1v1a.5.5 0 0 0 1 0v-1h1a.5.5 0 0 0 0-1h-1v-1a.5.5 0 0 0-.5-.5Z"/>
+                          </svg></button>
+                    </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
-				</div>
+        <!-- Nav -->
+        <!-- Nav Container -->
+        <nav class="navbar shadow navbar-expand-lg navbar-dark p-0">
+            <div class="container-lg">
+            <a href="/" class="navbar-brand">FrankenTech</a>
+            <!-- Links -->
+            <div class="collapse navbar-collapse navbar-light" id="navbarSupportedContent">
+                <ul class="navbar-nav mb-2 mb-lg-0">
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#consulting">Consulting</a>
+                    </li>
+                    <li class="nav-item me-2">
+                        <a class="nav-link" href="#publications">Publications</a>
+                    </li>
+                    <!-- Call to Action -->
+                    <li class="nav-item">
+                        <a class="btn btn-outline-primary me-1" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact</a>
+                    </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
 
-			<!-- Main -->
-				<div class="wrapper style2">
+        <!-- Hero -->
+        <div id="herobg">
+            <div class="hero">
+                <div class="container-lg py-5">
+                    <div class="row py-5">
+                        <div class="col-10">
+                            <h1>Un-Bottleneck R&D</h1>
+                            <p>Meet your budget, deadline, and risk tolerance by reducing the time, cost, and risk of R&D: we work with you to identify your R&D bottlenecks, procure convergent off-the-shelf technologies to expand them, and integrate them into a new workflow with training and tech support.</p>
+                            <a href="#" class="btn btn-outline-primary me-1"type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Contact</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				        <article id="main" class="container special">
-				                <p style="color:white">BRING YOUR ABOMINATION TO LIFE<br><p>
-						<header>
-							<h2>Hypothesize at Hyperspeed</h2>
-							<p>
-							        Be first to file a patent, go to market, and scale production.
-							</p>
-						</header>
-						<p>
-						  Patent, market, and scale more quickly, cheaply, and surely with consulting and custom solutions based on our new design-build-test loop.  With expertise in laboratory operations, machine learning, and bioinformatics, we combine high-throughput experiments, automatic cloud data storage, and breakthrough small-data machine learning to help your research and development project spiral toward discovery!
-						</p>
-						<footer>
-							<a href="consulting" class="button">Continue Reading</a>
-						</footer>
-					</article>
+        <!-- Consulting -->
+        <div class="container-lg pt-5">
+            <div class="row">
+            <div class="col-12 mb-0">
+                <h2 class="py-2"><a id="consulting"></a>FrankenTech R&D Workflow</h2>
+            </div>
+            <div class="col-10 mt-0">
+                <p class="ps-1">Our FrankenTech R&D workflow has three steps, each using one of three off-the-shelf technologies, which have converged to reduce the time, cost, and risk of R&D when used together.</p>
+            </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4 mb-4" >
+                    <div class="card h-100" data-tilt data-tilt-max="4" data-tilt-speed="200" data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare=".1">
+                        <img src="./img/experiment.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Experiment</h3>
+                            <p class="card-text">High-throughput machines rapidly, redundantly, and reliably test many hypotheses at once.</p>
+                            <!-- <a href="#" class="btn btn-outline-primary me-1">Call to Action</a> -->
+                        </div>
+                        <div class="row ps-3 pb-3">
+                            <div class="col-12">
+                                <div class="line"><div class="light"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" data-tilt data-tilt-max="4" data-tilt-speed="200" data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare=".1">
+                        <img src="./img/upload.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Upload</h3>
+                            <p class="card-text">Data pipelines move data straight from the machines to a seamless, scientist-friendly cloud.</p>
+                            <!-- <a href="#" class="btn btn-outline-primary me-1">Call to Action</a> -->
+                        </div>
+                        <div class="row ps-3 pb-3">
+                            <div class="col-12">
+                                <div class="line"><div class="light"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100" data-tilt data-tilt-max="4" data-tilt-speed="200" data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare=".1">
+                        <img src="./img/analyze.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h3 class="card-title">Analyze</h3>
+                            <p class="card-text">Machine learning generates and refines hypotheses from iterative datasets.</p>
+                            <!-- <a href="#" class="btn btn-outline-primary me-1">Call to Action</a> -->
+                        </div>
+                        <div class="row ps-3 pb-3">
+                            <div class="col-12">
+                                <div class="line"><div class="light"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				</div>
+        <!--Publications (Horizontal Layout)-->
+        <div class="container-lg">
+            <div class="row">
+                <div class="col-12 mb-0">
+                    <h2 class="py-2"><a id="publications"></a>FrankenTech Publications</h2>
+                </div>
+                <div class="col-10 mt-0">
+                    <p class="ps-1">We collaborate with academic researchers and apply our loop framework to their problems to demonstrate our capabilities, accelerate state-of-the-art research, and solve difficult problems facing humanity and the environment.</p>
+                </div>
+            </div>
+            <div class="row pb-4 px-2">
+                <div class="card px-0" data-tilt data-tilt-max="1" data-tilt-speed="200" data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare=".25">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="./img/parallel-exploration.jpg" class="img-fluid card-img px-0 h-100" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">Automatic Parallel Exploration</h3>
+                                <h4 class="card-title">Definfing Goals, exploring models, identifying success, and updating inputs</h4>
+                                <p class="card-text">An overview of our framework, the business case for it, and relevant technological trends.</p>
+                                <!-- <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#APE">Watch the Video</button> -->
+                                <a type="button" class="btn btn-outline-primary" href="https://www.youtube.com/embed/6dpyTMhw-9s" target="blank">Watch the Video on YouTube</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="row pb-4 px-2">
+                <div class="card ps-0">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="./img/download-2.png" class="img-fluid card-img px-0 h-100" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">Whitepaper</h3>
+                                <h4 class="card-title">Definfing Goals, exploring models, identifying success, and updating inputs</h4>
+                                <p class="card-text">A simulated computational approach from FrankenTech allows research labs to model a biological system, at any level ranging from environmental inputs to protein expression pathways, to manipulate with different inputs.</p>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-primary">Coming Soon</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> -->
+            <div class="row pb-4 px-2">
+                <div class="card px-0" data-tilt data-tilt-max="1" data-tilt-speed="200" data-tilt-reverse="true" data-tilt-glare="true" data-tilt-max-glare=".25">
+                    <div class="row g-0">
+                        <div class="col-md-6">
+                            <img src="./img/reef.jpg" class="img-fluid card-img px-0 h-100" alt="">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card-body">
+                                <h3 class="card-title">Saving our reefs</h3>
+                                <h4 class="card-title">Applying the Frankentech <em>APES</em> framework to better understand coral bleaching</h4>
+                                <p class="card-text">With just a few small CSV files and the lines of code to import the library and read them in, we had the parallel optimization library up and running, delivering answers as fast as we could ask questions.</p>
+                                <div class="btn-group" role="group" aria-label="Basic outlined example">
+                                    <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#reef">Read the Case Study</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-			<!-- Features -->
-				<div class="wrapper style1">
+        <!-- Footer -->
+        <div class="container-fluid px-0">
+            <div class="row">
+                <div class="col">
+                    <nav class="navbar navbar-dark">
+                        <div class="container-lg">
+                            <div class="d-flex flex-column justify-content-end">
+                                <div>&copy 2022. All Rights Reserved.</div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
 
-					<section id="features" class="container special">
-						<header>
-							<h2><a href="consulting">Our Framework</a></h2>
-							<p>Automatic Parallel Exploration of Systems</p>
-						</header>
-						<div class="row">
-						        <article class="col-4 col-12-mobile special">
-								<a class="image featured"><img src="images/evolve.jpg" alt="" /></a>
-								<header>
-								        <h3>Hypothesize</h3>
-								</header>
-								<p>
-									Breakthrough small-data machine learning software develops the likeliest potenial models of the system you are studying and optimizes their inputs for the outputs you want.
-								</p>
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a class="image featured"><img src="images/optimize.jpg" alt="" /></a>
-								<header>
-									<h3>Experiment</h3>
-								</header>
-								<p>
-									 State-of-the-art high-throughput experiment machines repeatedly and reliably test the recommendations of the optimized model.
-								</p>
-							</article>
-							<article class="col-4 col-12-mobile special">
-								<a class="image featured"><img src="images/experiment.jpg" alt="" /></a>
-								<header>
-									<h3>Upload</h3>
-								</header>
-								<p>
-									 Newly commercially available automatic cloud data management services take the data from the high-throughput machines and return them to the machine learning software to improve its model and optimizations.
-								</p>
-							</article>
-						</div>
-					</section>
+        <!-- Modals -->
+        <!-- APE Modal-->
+        <div class="modal dark fade" id="APE" tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered modal-xl">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body p-0 m-0 cinema">
+                  <!-- <iframe position="absolute" width="100%" height="100%" src="https://www.youtube.com/embed/6dpyTMhw-9s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+                </div>
+              </div>
+            </div>
+        </div>
+        <!-- Reef Modal-->
+        <div class="modal dark fade" id="reef" tabindex="-1">
+            <div class="modal-dialog modal-dialog-scrollable modal-fullscreen">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <h3>Saving our Reefs</h3>
+                        <h4>Applying the Frankentech APES framework to better understand coral bleaching.</h4>
+                        <div class="row">
+                            <div class="col-lg-8 col-sm-12">
+                                <img src="./img/reef.jpg" class="img-fluid float-start pt-3 pe-3 pb-3" alt="Coral Reef">
+                                <div class="row ps-3 pb-3">
+                                    <div class="col-12">
+                                        <div class="line"><div class="light"></div></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-sm-12">
+                                <h5 class="pt-3">Introduction</h5>
+                                <p>Coral bleaching is poorly understood but devastating, killing reefs by making their coral expel the symbiotic algae that feed them. Scientists are still probing its causes. Were an accurate model of the phenomenon ever developed, the combinations of environmental variables would be too many to try manually.</p><p>But the optimization library we developed for APES automatically evolves an initial guess about them into the right one by simulating a batch of parallel reefs across a range of conditions, comparing their growth to the target, and repeating with a new batch seeded with the initial conditions of the closest-scoring reefs until one gets within tolerance.</p>
+                                <h5>Fluctuating Temperature</h5>
+                                <p>The most important influence on coral reef growth is ocean temperature, which fluctuates with some amplitude around a mean over each year. Coral has adapted to these fluctuations over countless millions of years, but global warming is heating the oceans, raising their mean temperature and therefore their peak temperature, which has become so hot that coral reefs worldwide bleach every summer.</p><p>During literature review about the metabolic pathways responsible, we turned the problem on its head and asked, "What ocean temperature mean and amplitude does coral need to survive?", and our parallel optimization library delivered the answer instantly and easily for any timeframe and growth amount.</p>
+                                <h5>Easy Setup</h5>
+                                <p>With just a few small CSV files and the lines of code to import the library and read them in, we had the parallel optimization library up and running, delivering answers as fast as we could ask questions. We had to code a simulation for the coral, of course, but that's a job for the automatic model fitting part of our software, which will require us to finish our data gathering and literature review first.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-				</div>
+    </div>
 
-			<!-- Footer -->
-				<div id="footer">
-					<div class="container">
-						<div class="row">
+    <!-- Scripts -->
+    <script src="./scripts/vanilla-tilt.js"></script>
 
-							<!-- Tweets -->
-								<section class="col-4 col-12-mobile">
-									<header>
-										<h2 class="icon brands fa-twitter circled"><span class="label"> Tweets</span></h2>
-									</header>
-									<ul class="divided">
-										<li>
-											<article class="tweet">
-												<a href="https://twitter.com/neck_bolts/status/1392634576636301312?s=20">"WE'RE ALIVE!  ALIVE!"</a>
-											</article>
-										</li>
-										<li>
-											<article class="tweet">
-												<a href="https://twitter.com/neck_bolts/status/1393385744442425348?s=20">"FrankenBot has a Twitter"</a>
-											</article>
-										</li>
-										<li>
-											<article class="tweet">
-												<a href="https://twitter.com/neck_bolts/status/1392634718143668224?s=20">"What could possibly go wrong?"</a>
-											</article>
-										</li>
-										<li>
-											<article class="tweet">
-												<a href="https://twitter.com/neck_bolts/status/1392635593381736452?s=20">"Just think of the potential!"</a>
-											</article>
-										</li>
-									</ul>
-								</section>
+    <script>
 
-							<!-- Posts -->
-								<section class="col-4 col-12-mobile">
-									<header>
-										<h2 class="icon solid fa-file circled"><span class="label">Posts</span></h2>
-									</header>
-									<ul class="divided">
-									        <li>
-											<article class="post stub">
-												<header>
-													<h3><a href="https://en.wikipedia.org/wiki/Biopharmaceutical">Biopharmaceuticals</a></h3>
-												</header>
-											</article>
-										</li>
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="https://en.wikipedia.org/wiki/Organoid">Organoids for research</a></h3>
-												</header>
-											</article>
-										</li>
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="https://en.wikipedia.org/wiki/Cultured_meat">Lab-grown meat</a></h3>
-												</header>
-											</article>
-										</li>
-										<li>
-											<article class="post stub">
-												<header>
-													<h3><a href="https://en.wikipedia.org/wiki/Artificial_organ">Synthetic human organs</a></h3>
-												</header>
-											</article>
-										</li>
-									</ul>
-								</section>
+    VANTA.CELLS({
+        el: '#herobg',
+        color1: 0x697070,
+        color2: 0x000000,
+        waveHeight: 1,
+        shininess: 1,
+        waveSpeed: .25,
+        zoom: 1,
+        mouseControls: true,
+        touchControls: true,
+        gyroControls: true,
+        scale: 1.00,
+        size: 1.75,
+        minWidth: 800.00,
+      })
 
-							<!-- Photos -->
-								<section class="col-4 col-12-mobile">
-									<header>
-										<h2 class="icon solid fa-camera circled"><span class="label">Photos</span></h2>
-									</header>
-									<div class="row gtr-25">
-										<div class="col-6">
-											<a class="image fit"><img src="images/petri_dishes.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a class="image fit"><img src="images/supercomputer.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a class="image fit"><img src="images/fiber.jpg" alt="" /></a>
-										</div>
-										<div class="col-6">
-											<a class="image fit"><img src="images/laboratory.jpg" alt="" /></a>
-										</div>
-									</div>
-								</section>
+    </script>
+ 
+  </body>
 
-						</div>
-						<hr />
-						<div class="row">
-							<div class="col-12">
-
-								<!-- Contact -->
-									<section class="contact">
-										<header>
-											<h3>Want to see more?</h3>
-										</header>
-										<p>Find us on Twitter!</p>
-										<ul class="icons">
-											<li><a class="icon brands fa-twitter" href="https://twitter.com/neck_bolts"><span class="label">Twitter</span></a></li>
-										</ul>
-									</section>
-
-								<!-- Copyright -->
-									<div class="copyright">
-										<ul class="menu">
-										  <li>&copy; Helios. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
-										  <li>&copy; Coral <a href='https://www.freepik.com/photos/water'>Water photo created by wirestock - www.freepik.com</a></li>
-										  <li>&copy; Snowballs by <a href="https://pixabay.com/users/jillwellington-334088/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2969243">Jill Wellington</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2969243">Pixabay</a></li>
-										  <li>&copy; Volunteers by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2729723">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2729723">Pixabay</a></li>
-										  <li>&copy; Research by <a href='https://www.freepik.com/vectors/infographic'>Infographic vector created by rawpixel.com - www.freepik.com</a></li>
-										  <li>&copy; Simulate by <a href='https://www.freepik.com/photos/technology'>Technology photo created by rawpixel.com - www.freepik.com</a></li>
-										  <li>&copy; Validate by <a href="https://pixabay.com/users/kkolosov-2105326/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2030266">Konstantin Kolosov</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2030266">Pixabay</a>
-										  <li>&copy; Iterate by <a href="https://pixabay.com/users/geralt-9301/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1044090">Gerd Altmann</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=1044090">Pixabay</a></li>
-										  <li>&copy; Petri Dishes by <a href="https://pixabay.com/users/sansiona-1172026/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829371">Sintija Valucka</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=829371">Pixabay</a></li>
-										  <li>&copy; Supercomputer by <a href="https://pixabay.com/users/12019-12019/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=92369">David Mark</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=92369">Pixabay</a></li>
-										  <li>&copy; Fiber by <a href="https://pixabay.com/users/thedigitalartist-202249/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2254769">Pete Linforth</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2254769">Pixabay</a></li>
-										  <li>&copy; Laboratory by <a href="https://pixabay.com/users/jarmoluk-143740/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2813891">Michal Jarmoluk</a> from <a href="https://pixabay.com/?utm_source=link-attribution&amp;utm_medium=referral&amp;utm_campaign=image&amp;utm_content=2813891">Pixabay</a></li>
-										  
-										  
-										</ul>
-									</div>
-
-							</div>
-
-						</div>
-					</div>
-				</div>
-
-		</div>
-
-		<!-- Scripts -->
-			<script src="assets/js/jquery.min.js"></script>
-			<script src="assets/js/jquery.dropotron.min.js"></script>
-			<script src="assets/js/jquery.scrolly.min.js"></script>
-			<script src="assets/js/jquery.scrollex.min.js"></script>
-			<script src="assets/js/browser.min.js"></script>
-			<script src="assets/js/breakpoints.min.js"></script>
-			<script src="assets/js/util.js"></script>
-			<script src="assets/js/main.js"></script>
-
-	</body>
 </html>
